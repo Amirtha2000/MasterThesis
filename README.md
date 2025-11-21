@@ -34,7 +34,7 @@ Processing3Dsketch/
 ├── annotations/               \# Corner frames, anchors, centroids (Outputs of scoring scripts)
 ├── scoring/                   \# Final accuracy results (CSV outputs)
 │
-├── src/
+├── pythons scripts/
 │   ├── batch\_strip\_and\_remove\_materials.py \# 1. Preprocessing (OBJ Cleaning)
 │   ├── split\_obj\_into\_3floors\_batch.py     \# 2. Level Extraction & Projection
 │   ├── quantitive\_score.py                 \# 3. Landmark Detection (H/M Scores)
