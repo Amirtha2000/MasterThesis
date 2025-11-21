@@ -19,13 +19,38 @@ Key Features
 * Reproducible, audit-ready visual confirmation outputs
 
 
+It looks like the file structure section, which uses ASCII art, lost its formatting when you copied it. To display directory trees properly in Markdown, you need to enclose the block in a code fence (three backticks).
 
-Processing3Dsketch/ │ ├── data_raw/ # Original OBJ exports from VResin ├── data_clean/ # Sanitized OBJ files ├── levels/ # Separated per-floor OBJs ├── png/ # Rasterized top-down images ├── annotations/ # Corner frames, anchors, centroids (Outputs of scoring scripts) ├── scoring/ # Final accuracy results (CSV outputs) │ ├── src/ │ ├── batch_strip_and_remove_materials.py # 1. Preprocessing (OBJ Cleaning) │ ├── split_obj_into_3floors_batch.py # 2. Level Extraction & Projection │ ├── quantitive_score.py # 3. Landmark Detection (H/M Scores) │ ├── overlap_analysis.py # 4. Vertical Overlap Validation (Scoring) │ ├── overlap-img-analysis.py # 4. Vertical Overlap Visualization (QA) │ ├── angle_dev.py # 5. Angular-Deviation Scoring │ ├── rotation_acc.py # 6. Floor Rotation Accuracy │ └── (Optional) scorer.py # Final aggregation script │ └── README.md
+Here is the corrected, copy-pastable version of the **Repository Structure** section:
 
+```markdown
+## Repository Structure
 
+```
 
+Processing3Dsketch/
+│
+├── data\_raw/                  \# Original OBJ exports from VResin
+├── data\_clean/                \# Sanitized OBJ files
+├── levels/                    \# Separated per-floor OBJs
+├── png/                       \# Rasterized top-down images
+├── annotations/               \# Corner frames, anchors, centroids (Outputs of scoring scripts)
+├── scoring/                   \# Final accuracy results (CSV outputs)
+│
+├── src/
+│   ├── batch\_strip\_and\_remove\_materials.py \# 1. Preprocessing (OBJ Cleaning)
+│   ├── split\_obj\_into\_3floors\_batch.py     \# 2. Level Extraction & Projection
+│   ├── quantitive\_score.py                 \# 3. Landmark Detection (H/M Scores)
+│   ├── overlap\_analysis.py                 \# 4. Vertical Overlap Validation (Scoring)
+│   ├── overlap-img-analysis.py             \# 4. Vertical Overlap Visualization (QA)
+│   ├── angle\_dev.py                        \# 5. Angular-Deviation Scoring
+│   ├── rotation\_acc.py                     \# 6. Floor Rotation Accuracy
+│   └── (Optional) scorer.py                \# Final aggregation script
+│
+└── README.md
 
-
+```
+```
 
 
 Installation
