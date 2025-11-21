@@ -19,14 +19,11 @@ Key Features
 * Reproducible, audit-ready visual confirmation outputs
 
 
-It looks like the file structure section, which uses ASCII art, lost its formatting when you copied it. To display directory trees properly in Markdown, you need to enclose the block in a code fence (three backticks).
 
-Here is the corrected, copy-pastable version of the **Repository Structure** section:
 
 ```markdown
 ## Repository Structure
 
-```
 
 Processing3Dsketch/
 │
@@ -50,7 +47,7 @@ Processing3Dsketch/
 └── README.md
 
 ```
-```
+
 
 
 Installation
